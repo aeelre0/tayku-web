@@ -52,3 +52,10 @@ ___
 | v0.0.1  | 2026-09-16 | Initial layer architecture definitions and boundaries established. | Ali Emre Arlı |
 |         |            |                                                                    |               |
 
+___
+
+# LICENSE 
+
+This project is licensed under the GNU General Public License v3.0 or later.
+
+___
