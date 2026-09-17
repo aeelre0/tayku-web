@@ -45,12 +45,12 @@ ___
 
 ___
 
-# 7. Design Revision History (Changelog)
+# 5. Design Revision History (Changelog)
 
 | Version | Date       | Description of Changes                                             | Author        |
 | :------ | :--------- | :----------------------------------------------------------------- | :------------ |
 | v0.0.1  | 2026-09-16 | Initial layer architecture definitions and boundaries established. | Ali Emre Arlı |
-|         |            |                                                                    |               |
+| v0.0.2  | 2026-09-17 | `cli.js` was created and decided the contract.                     | Ali Emre Arlı |
 
 ___
 
