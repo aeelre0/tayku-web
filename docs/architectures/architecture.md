@@ -163,18 +163,7 @@ ___
 
 ___ 
 
-# 7. DNon-Goals
-
-Explicitly document things this architecture is not intended to solve.
-Future Considerations
-
-Document potential extensions or known future requirements without making them part of the current architecture.
-Related Documents
-
-    <related-document>
-
-    <related-document>evlog 
-
+# 7. Devlog
 - **v0.0.0 - DATE**
     - Unix philosopy was embraced.
     - Filesystem of client was organised.
