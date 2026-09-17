@@ -51,7 +51,8 @@ ___
 | :------ | :--------- | :----------------------------------------------------------------- | :------------ |
 | v0.0.1  | 2026-09-16 | Initial layer architecture definitions and boundaries established. | Ali Emre Arlı |
 | v0.0.2  | 2026-09-17 | `cli.js` was created and decided the contract.                     | Ali Emre Arlı |
-
+| v0.0.3  | 2026-09-17 | `commands.js` and `commands.json` was created and their contract   | Ali Emre Arlı |
+|         |            | was established (primitive).                                                       |
 ___
 
 # LICENSE 

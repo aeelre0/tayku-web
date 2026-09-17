@@ -16,6 +16,7 @@ ___
     - Tayku Client allows to download published modules and packages by automatic configration of your projects.
     - Tayku Client provides an interface for searching a package or a module.
     - Tayku Client can initialize your project with you own configrations automatically (only `nodejs` for now.).
+    - This module manages the communication between Unix Socket and inner modules.
 
 - **out-of-scope:**
     - Tayku Client doesn't interests the internal security of unofficial packages.
@@ -46,6 +47,7 @@ ___
 
 ## 3.1 Command List
 - `add` : This command downloads the thing you want if exists. Its parameters are defines the type of the item.
+- `remove` : This command deletes the thing downloaded.
 - `list` : This command lists the thing you want. Its parameters are specifies the type of the item.
 - `man` : This command shows the detailed informations of commands, utils, stautus-codes, packages etc...
 - `search` : This command searchs the thing you want in the sources. Its parameters are specifies the type of the items.
@@ -84,13 +86,22 @@ function parseArgs(argc, argv, out) {}
 function dispatchCommand(command, out) {}
 
 /**
- * Send a Common Message to a Tayku component.
+ * Establish a connection to a Tayku component.
  *
- * @param {object} message
+ * @param {string} endpoint
  * @param {object} out
  * @returns {number} TAYKU_STATUS_CODE
  */
-function sendMessage(message, out) {}
+function connect(endpoint, out) {}
+
+/**
+ * Send a Common Message to a Tayku component.
+ *
+ * @param {object} connection
+ * @param {object} message
+ * @returns {number} TAYKU_STATUS_CODE
+ */
+function sendMessage(connection, message) {}
 
 /**
  * Receive a Common Message from a Tayku component.
@@ -100,6 +111,14 @@ function sendMessage(message, out) {}
  * @returns {number} TAYKU_STATUS_CODE
  */
 function receiveMessage(connection, out) {}
+
+/**
+ * Close a connection to a Tayku component.
+ *
+ * @param {object} connection
+ * @returns {number} TAYKU_STATUS_CODE
+ */
+function close(connection) {}
 
 /**
  * Print a response to the user.
