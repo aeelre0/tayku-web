@@ -46,12 +46,14 @@ ___
     - `TAYKU-STATUS-CODE` by a message. 
 
 ## 3.1 Command List
-- `add` : This command downloads the thing you want if exists. Its parameters are defines the type of the item.
+- `install` : This command downloads the thing you want if exists. Its parameters are defines the type of the item.
 - `remove` : This command deletes the thing downloaded.
 - `list` : This command lists the thing you want. Its parameters are specifies the type of the item.
 - `man` : This command shows the detailed informations of commands, utils, stautus-codes, packages etc...
 - `search` : This command searchs the thing you want in the sources. Its parameters are specifies the type of the items.
 - `init` : initializes a project by the config you specified.
+- `add-registry` : This command adds the registry source if its meets the requirements.
+- `publish` : This command publishes the package in the registry that you choose if its meets the requirements.
 
 > [!Info]
 > Parameters of the commands are specified in its own pages.

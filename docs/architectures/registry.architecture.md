@@ -306,6 +306,9 @@ or module.
 A package or module with an invalid, missing, or unverifiable signature
 MUST NOT be considered secure by the Tayku Client (see [[verifier.architecture.md]]).
 
+> [!Note] Publishing
+> Publishing is one way to distribute your packages; however, the registry may not allow it. This does not prevent it from being a registry source.
+
 ___ 
 
 # 4. Data Flow 
